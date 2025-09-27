@@ -1,0 +1,9 @@
+{
+  "hero_title": "Meu Portfólio",
+  "hero_subtitle": "Designer & Desenvolvedor",
+  "hero_image": "/assets/uploads/hero.jpg",
+  "menu": [
+    {"label":"Página 1","link":"/page1.html"},
+    {"label":"Página 2","link":"/page2.html"}
+  ]
+}
