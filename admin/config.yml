@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"   # onde as imagens serão salvas dentro do repo
+public_folder: "/assets/uploads" # caminho público usado no HTML
+
+collections:
+  - name: "site"
+    label: "Site"
+    files:
+      - file: "content/site.json"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Menu Items", name: "menu", widget: "list", field: { label: "Item", name: "item", widget: "object", fields: [{label: 'Label', name: 'label', widget: 'string'},{label: 'Link', name: 'link', widget: 'string'}] } }
